@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="Расход в день"
+                android:textSize="20sp"
+                android:layout_marginTop="16dp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/expense_in_day"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:hint="0"
+                android:textSize="20sp"
+                android:layout_marginTop="8dp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="Расход в неделю"
+                android:textSize="20sp"
+                android:layout_marginTop="8dp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/expense_in_week"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:hint="0"
+                android:textSize="20sp"
+                android:layout_marginTop="8dp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#212121"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="Расход в день"
+                android:textSize="20sp"
+                android:layout_marginTop="16dp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/actual_expense_in_day"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:hint="0"
+                android:textSize="20sp"
+                android:layout_marginTop="8dp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="Расход в неделю"
+                android:textSize="20sp"
+                android:layout_marginTop="8dp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/actual_expense_in_week"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:hint="0"
+                android:textSize="20sp"
+                android:layout_marginTop="8dp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="Текущий прогресс"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textSize="30sp"
+        android:textColor="#000000"/>
+
+    <ProgressBar
+        android:id="@+id/progress_dream"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/progressBar"
+        android:indeterminate="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp"
+        android:progress="55"
+        android:max="100"/>
+
+</LinearLayout>

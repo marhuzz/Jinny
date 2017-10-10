@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.genia.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Месячныцй доход"
+        android:textAllCaps="true"
+        android:textColor="#F44336"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/Salary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:hint="Введите месячный доход"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Коммунальные услуги"
+        android:textAllCaps="true"
+        android:textColor="#F44336"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/MunicipalServices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:hint="Введите стоимость коммунальных услуг"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="На что копим?"
+        android:textAllCaps="true"
+        android:textColor="#F44336"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/Dream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:hint="Напишите свою мечту!" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Стоимость мечты"
+        android:textAllCaps="true"
+        android:textColor="#F44336"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/Dream_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:hint="Введите стоимость мечты"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Сколько откладываем?"
+        android:textAllCaps="true"
+        android:textColor="#F44336"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/Save_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:hint="Введите сколько откладываем"
+        android:inputType="number"/>
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Прогресс..."-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_marginTop="16dp"-->
+    <!--android:textAllCaps="true"-->
+    <!--android:textColor="black"-->
+    <!--android:textSize="16sp"/>-->
+
+    <!--<ProgressBar-->
+    <!--android:id="@+id/progressBar"-->
+    <!--android:layout_marginTop="16dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:max="100"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--style="@android:style/Widget.ProgressBar.Horizontal"-->
+    <!--android:layout_marginBottom="16dp"/>-->
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="#4CAF50"
+        android:onClick="onClickButtonNext"
+        android:text="Вперёд!" />
+
+</LinearLayout>

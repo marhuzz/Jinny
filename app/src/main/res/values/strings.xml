@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Genia</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_add_salary">Внести зарплату</string>
+    <string name="action_change_dream">Сменить мечту</string>
+    <string name="settings">Настройки</string>
+</resources>
